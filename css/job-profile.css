@@ -1,0 +1,195 @@
+.blacktitle h1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 12px;
+}
+.jobcheckbox_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.jobcheckbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.jobcheckbox_container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 1px solid #8B8B9B;
+    border-radius: 2px;
+}
+.jobcheckbox_container input:checked ~ .jobcheckbox_text{border: 2px solid #1480FF;}
+.jobprofile_left ul{padding:0px;}
+.jobprofile_left ul li{list-style:none;}
+
+/* When the checkbox is checked, add a blue background */
+.jobcheckbox_container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.jobcheckbox_container .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.jobprofile_right .profile-popupcont ul li:hover a span {
+    color: #fff;
+    text-decoration: underline;
+}
+/* Show the checkmark when checked */
+.jobcheckbox_container input:checked ~ .checkmark:after {
+  display: block;
+}
+.jobprofile_left .profile_popupbg {
+    position: static;
+}
+/* Style the checkmark/indicator */
+.jobcheckbox_container .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.jobcheckbox_text {
+    background: #fff;border-radius: 4px;border:2px solid transparent;
+    -webkit-box-shadow: 2px 2px 18px 0px rgba(0,0,0,0.1);
+            box-shadow: 2px 2px 18px 0px rgba(0,0,0,0.1);
+    padding: 15px 15px;    display: inline-block;
+    width: 100%;
+}
+.col.jobprofile_left {
+    max-width: 400px;
+}
+.jobcheckbox_text h4 {
+    font-size: 16px;
+    margin-bottom: 0;
+    color: #000;
+}
+.jobcheckbox_text h5 {
+    color: #000;
+    font-family: 'sf_ui_displayregular';
+    font-size: 16px;
+}
+.jobcheckbox_text p {
+    color: #8B8B9B;
+    font-size: 11px;margin-bottom: 0;
+}
+.jobcheckbox_text p .applieddate {
+    color: #8B8B9B;
+    float: left;
+    padding-right: 6px;
+}
+.jobcheckbox_text p span {
+    text-align: right;
+    float: right;
+    color: #03A755;
+}
+.jobprofile_right .profile-popupimg{max-height:330px;}
+.greybg{background:#F2F2F2;}
+.jobprofile_right .profile_popup {
+    background: #fff; min-height: 600px;
+}
+.jobprofile_right .profilepopup_right {
+    margin: 0;    max-height: 100px;
+    padding: 20px 25px;
+}
+.jobprofile_contsec {
+    margin-top: 60px;
+}
+.jobprofile_right .profile_buttons a {
+    padding: 6px 10px;
+}
+.jobprofile_right .profiledoc img{width:100%;}
+a.backbtn.backapproverbtn:hover{color:#1480FF;}
+.jobprofile_right .profilepopup_right {
+    margin: 0;
+    max-height: 610px;
+    padding: 20px 25px;
+    overflow-y: scroll;
+}
+.jobprofile_right .profilepopup_right{overflow-y:scroll;padding:20px 18px;}
+
+@media (max-width:1440px) {
+	.jobprofile_right .profilepopup_right p{font-size:14px;}
+	.jobprofile_right .profilecont_blk .skillsblk.skills_selected li a{font-size:14px;padding:7px 9px;}
+}
+@media (max-width:1280px) {
+	.jobprofile_contsec .profile_buttons a{margin:0px 3px;}
+}
+@media (min-width:768px) {
+	.jobprofile_right .profile_popupbg{
+    position: static;max-width: 100%;height: 100%;
+}
+}
+
+@media (max-width:1199px) {
+	.jobprofile_right .profileright_popup {
+    max-width: 100%;
+    flex: 0 0 100%;
+}
+	.col.jobprofile_left {
+    max-width: 300px;
+}
+.jobprofile_right .profileleft_popup{-webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;}
+}
+.jobprofile_right .profile-popupcont ul li a{font-size:12px;}
+
+
+
+
+@media (max-width:992px) {
+	.col.jobprofile_left {
+    max-width: 100%;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+}
+	.jobprofile_right .profilepopup_right{max-height:initial;}
+	.jobprofile_right .profile_popup{min-height:auto;}
+}
+@media(max-width:767px) {
+.jobprofile_right .profile-popupimg {
+    max-height: 420px;
+}
+.col.jobprofile_left {
+    max-width: 100%;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+}
+.jobprofile_contsec {
+    margin-top: 20px;
+}
+}
+@media (max-width:575px) {
+		.jobprofile_contsec .prev_empblkcont p span {
+    float: none;
+    display: block;
+}
+	
+}

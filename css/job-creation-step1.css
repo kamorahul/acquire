@@ -1,0 +1,192 @@
+.jobprocess_sec ul li {
+    display: inline;
+    font-size: 11px;
+    color: #000000;
+    padding-right: 40px;position:relative;
+}
+li.stepprocess:before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 20px;
+    top: 3px;
+    left: -14px;
+}
+li.inprogress_step:before{background:#1480FF;}
+li.completed_step:before{background:#03A755;}
+.jobprocess_sec h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-family: 'sf_ui_displayregular';
+}
+.col.joprocess_leftbar {
+    max-width: 340px;
+}
+.joprocess_leftbar label.form-group {
+    width: 100%;
+}
+.joprocess_rightbar .col.abouttextarea textarea {
+    height: 210px;
+}
+.joprocess_rightbar ul.skillsblk li {
+    padding: 0 2px 0 0;
+}
+.joprocess_rightbar ul.skillsblk li a {
+    font-size: 16px;
+}
+a.gobackbtn {
+    color: #1480FF;
+    font-weight: 600;
+}
+.continuebtn button {
+    width: auto;
+}
+.form-group.stepform_group.salaryrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;-ms-flex-wrap:wrap;flex-wrap:wrap;
+}
+.salarytabs li.nav-item a:before{content:none !important;}
+ul.nav.nav-tabs.salarytabs {
+    border: 0;
+}
+ul.nav.nav-tabs.salarytabs li a {
+    border: 0;
+    padding: 6px 17px;
+    line-height: 12px;
+    text-align: center;
+    color: #1480FF;
+    font-size: 12px;
+    font-family: sf_ui_displaybold;
+}
+ul.nav.nav-tabs.salarytabs {
+    border: 2px solid #1480FF;
+    border-radius: 30px;
+    margin-left: 20px;
+    position: relative;
+    top: -9px;    -ms-flex-wrap: wrap;    flex-wrap: wrap;
+}
+ul.nav.nav-tabs.salarytabs li {
+    padding: 0;
+}
+.salaryrow .tab-content{width:100%;}
+ul.nav.nav-tabs.salarytabs li a.active {
+    background: #1480FF;
+    color: #fff;
+}
+ul.nav.nav-tabs.salarytabs li:first-child a{border-radius: 10px 0px 0px 10px;}
+ul.nav.nav-tabs.salarytabs li:last-child a{border-radius: 0px 10px 10px 0px;}
+.salarytab_content .noUi-tooltip {
+    top: 0;
+    left: -24px;
+}
+.salaryrow .tab-content {
+    width: 86%;
+    margin-left: 10px;
+}
+.salaryrow .noUi-horizontal .noUi-handle-upper .noUi-tooltip {
+    right: -90px;
+    left: 0;background:transparent;
+}
+.salaryrow .noUi-horizontal .noUi-handle{z-index:9999;}
+.salarytab_content .tab-content{width:100%;}
+
+.jobprocess_step2 .form-group.stepform_group {
+    margin-bottom: 5px;
+}
+.joprocess_leftbar .form-side.profile_formsec label.form-group span {
+    max-width: 100px;
+}
+.joprocess_leftbar .form-side.profile_formsec label.form-group {
+    margin-bottom: 10px !important;
+}
+.joprocess_leftbar .form-side.profile_formsec label.form-group span.select2.select2-container.select2-container--bootstrap {
+    max-width: 100%;
+}
+.joprocess_rightbar .stepform_group span {
+    margin-top: 0px;
+}
+.joprocess_leftbar .form-side.profile_formsec {
+    padding-top: 20px;
+}
+.jobprocess_sec ul {
+    padding: 0;
+}
+
+
+@media(max-width:1440px) {
+	.jobprocess_sec h2 {
+    font-size: 28px;}
+}
+
+@media (max-width:1024px) {
+.joprocess_rightbar ul.skillsblk li a {
+font-size: 12px;}
+}
+@media (max-width:992px) {
+
+	ul.nav.nav-tabs.salarytabs{margin-left:0px;top:0px;}
+	.salaryrow span{display:block;width:100%;}
+	.jobprocess_sec h2 {
+    font-size: 22px;
+    text-align: center;
+}
+}
+@media (max-width:767px) {
+	ul.nav.nav-tabs.salarytabs li {
+    width: auto;
+}
+ul.nav.nav-tabs.salarytabs li a{padding:6px 8px;}
+	.joprocess_leftbar .form-side.profile_formsec label.form-group.formselectdiv span {
+    max-width: 100px;
+}
+		.col.joprocess_leftbar {
+    max-width: 100%;
+}
+.col.joprocess_rightbar , .col.joprocess_leftbar {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    width: 100%;
+}
+.jobprocess_sec .form-side.profile_formsec {
+    padding-top: 0;
+}
+	.joprocess_rightbar ul.skillsblk li{width:auto;}
+	.joprocess_rightbar ul.skillsblk li a {
+    font-size: 14px;
+}
+.jobprocess_sec ul.skillsblk {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+	
+	.jobprocess_sec ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;    -ms-flex-wrap: wrap;    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}	
+}
+@media (max-width:479px) {
+		li.stepprocess:before {
+    left: auto;
+    margin-left: -16px;
+}
+.jobprocess_sec ul{text-align:center;}
+		.joprocess_rightbar .stepform_group span {
+    margin-top: 2px;
+    display: block;
+    width: 100%;
+}
+ul.nav.nav-tabs.salarytabs {
+    margin-left: 0;
+    margin-top: 0px;
+}
+.jobprocess_sec ul li{padding-right:4px;width: 100%;}
+}

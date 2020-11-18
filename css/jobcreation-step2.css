@@ -1,0 +1,102 @@
+.jobprocess_sec ul li {
+    display: inline;
+    font-size: 11px;
+    color: #000000;
+    padding-right: 40px;position:relative;
+}
+li.stepprocess:before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 20px;
+    top: 3px;
+    left: -14px;
+}
+li.inprogress_step:before{background:#1480FF;}
+li.completed_step:before{background:#03A755;}
+.jobprocess_sec h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+    font-family: 'sf_ui_displayregular';
+}
+a.gobackbtn {
+    color: #1480FF;
+    font-weight: 600;
+}
+.continuebtn button {
+    width: auto;
+}
+.joprocess_rightbar ul.skillsblk li.addeditem a {
+    background: #1480ff;
+    color: #fff;
+}
+.joprocess_rightbar ul.skillsblk li {
+    padding: 0 2px 0 0;
+}
+.joprocess_rightbar ul.skillsblk li a {
+    font-size: 16px;
+}
+.jobprocess_sec ul {
+    padding: 0;
+}
+
+@media(max-width:1440px) {
+	.jobprocess_sec h2 {
+    font-size: 28px;}
+}
+
+@media (max-width:1024px) {
+.joprocess_rightbar ul.skillsblk li a {
+font-size: 12px;}
+}
+@media (max-width:992px) {
+	.jobprocess_sec h2 {
+    font-size: 22px;
+    text-align: center;
+}
+}
+@media (max-width:767px) {
+.col.joprocess_rightbar , .col.joprocess_leftbar {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    width: 100%;
+}
+.jobprocess_sec .form-side.profile_formsec {
+    padding-top: 0;
+}
+	.joprocess_rightbar ul.skillsblk li{width:auto;}
+	.joprocess_rightbar ul.skillsblk li a {
+    font-size: 14px;
+}
+.jobprocess_sec ul.skillsblk {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+	
+	.jobprocess_sec ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;    -ms-flex-wrap: wrap;    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}	
+}
+@media (max-width:479px) {
+		li.stepprocess:before {
+    left: auto;
+    margin-left: -16px;
+}
+.jobprocess_sec ul{text-align:center;}
+		.joprocess_rightbar .stepform_group span {
+    margin-top: 2px;
+    display: block;
+    width: 100%;
+}
+
+.jobprocess_sec ul li{padding-right:4px;width: 100%;}
+}

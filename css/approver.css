@@ -1,0 +1,130 @@
+.invite-approvers {
+    background: #F1F8FF;
+    text-align: center;
+    padding: 140px 20px;
+    border-radius: 10px;
+}
+.invite-approvers img.approvericon {
+    margin-bottom: 15px;
+}
+.invite-approvers p {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.invitebutton a {
+    background: #1480FF;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 4px;
+}
+.invitebutton a:hover , .hdr_approvebtn a:hover{background:#0c3253;}
+.invite-approvers {
+    background: #F1F8FF;
+    text-align: center;
+    padding: 140px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.hdr_approvebtn a {
+    background: #1480FF;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 4px;
+}
+.hdr_approvebtn {
+    margin-right: 15px;
+}
+.approverdata_table {
+    margin-top: 40px;
+}
+th.nameheading {
+    min-width: 520px !important;
+}
+.approverdata_table table th {
+    font-size: 12px !important;width:auto !important;
+}
+.approverdata_table table.dataTable tr{background:#f3f3f5;}
+.approverdata_table table.dataTable {
+    border-collapse: collapse !important;
+}
+.approverdata_table table.dataTable thead th:before {
+    content: "" !important;
+    background: url(../img/dropdown_arrow.png);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 99999;
+    background-repeat: no-repeat;
+    background-position: center center;
+    top: 19px;
+    right: 2em !important;
+    opacity: 1 !important;
+}
+.approverdata_table table.dataTable thead th:after{display:none;}
+.approverdata_table .row.view-pager{display:none;}
+.invitepopup .form-side form label span {
+    text-align: left;
+}
+.invitepopup .formselectdiv .select2-container--bootstrap .select2-selection--single .select2-selection__arrow b {
+    margin-top: -4px;
+}
+.removeapprove_text p {
+    margin-bottom: 0;
+    color: #000;
+    font-size: 16px;
+}
+.removepopup .profile_formbottomsec {
+    margin-top: 10px;
+}
+.approverdata_table table.dataTable thead th.nameheading:before{display:none;}
+.popupoverlay.modal.show {
+    background: rgba(0,0,0,0.7);
+	overflow-y: hidden;
+}
+.popupcontent {
+    max-height: 350px;
+        overflow-y: auto;
+    overflow-x: hidden;
+}
+.popupoverlay.modal{padding-bottom:50px;padding-left:0px !important;}
+.candidatedata_table.approverdata_table .row.view-pager{display:block;}
+.candidatedata_table.approverdata_table table th {
+    padding-right: 30px !important;
+}
+.candidatedata_table.approverdata_table table.dataTable thead th:before{display:none;}
+.candidatedata_table.approverdata_table table th img {
+    padding-left: 8px;
+}
+
+@media (max-width:1440px) {
+	th.nameheading {
+    min-width: 300px !important;
+}
+}
+@media (max-width:1366px) {
+	.invite-approvers{padding:110px 20px;}
+	.removeapprove_text p{font-size:15px;}
+	
+}
+@media (max-width:1199px) {
+	.removeapprove_text p{font-size:14px;}
+	.popupcontent {
+    max-height: 250px;
+    overflow: auto;
+}
+}
+@media (max-width:767px) {
+	.invite-approvers .modal {
+    padding-right: 0px !important;
+}
+	.hdr_approvebtn{margin-top:20px;}
+	.invite-approvers {
+    padding: 70px 20px;
+    margin-top: 0px;
+}
+.invite-approvers img.approvericon {
+    max-width: 70px;
+}
+.invite-approvers p{font-size:14px;}
+}
