@@ -1,2 +1,1 @@
-include: [".well-known"]
-include: [".well-known/acme-challenge"]
+include: [".well-known",".well-known/acme-challenge"]
