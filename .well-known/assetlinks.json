@@ -1,5 +1,6 @@
 [{
   "relation": ["delegate_permission/common.handle_all_urls"],
-  "target" : { "namespace": "android_app", "package_name": "com.onboardemployee",
-               "sha256_cert_fingerprints": ["72:1F:36:6E:E9:59:5D:8E:EC:19:AE:96:DA:83:BD:CF:6F:BD:35:19:EB:57:3E:87:58:1F:3F:9E:B5:8B:30:E0"] }
+  "target" : { "namespace": "android_app", "package_name": "jobs.acquire.employee",
+               "sha256_cert_fingerprints": ["72:1F:36:6E:E9:59:5D:8E:EC:19:AE:96:DA:83:BD:CF:6F:BD:35:19:EB:57:3E:87:58:1F:3F:9E:B5:8B:30:E0"] 
+           }
 }]
