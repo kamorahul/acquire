@@ -1,0 +1,49 @@
+/***********************************************************
+*
+* custom style @ajay starts
+*
+*************************************************************/
+
+.cstm-dropdown{
+	height : 200px;
+	overflow-y : scroll;
+}
+
+#loader {
+	position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: rgba(255,255,255,0.7);
+    z-index:9999;
+    display:none;
+  }
+  
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+#loader::after {
+    content:'';
+    display:block;
+    position:absolute;
+    left:48%;top:40%;
+    width:40px;height:40px;
+    border-style:solid;
+    border-color:#f3f3f3;
+    border-top-color:#3498db;
+    border-width: 4px;
+    border-radius:50%;
+    -webkit-animation: spin .8s linear infinite;
+    animation: spin .8s linear infinite;
+}  
+
+/***********************************************************
+*
+* custom style @ajay ends
+*
+*************************************************************/
