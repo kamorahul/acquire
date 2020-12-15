@@ -9,6 +9,7 @@ var filetype = '';
 var fileUploaded = '';
 
 
+
 	/*********************************************
 	*
 	*			Search result function starts
