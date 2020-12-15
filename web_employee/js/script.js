@@ -1,4 +1,4 @@
-var baseUrl = 'http://3.23.109.204:4001/';
+var baseUrl = 'https://api.acquire.jobs/';
 var utcOffest = new Date().getTimezoneOffset();
 var coordinates = {};
 var headers = 	{ 
@@ -7,6 +7,7 @@ var headers = 	{
 };
 var filetype = '';
 var fileUploaded = '';
+
 
 
 	/*********************************************
@@ -1054,7 +1055,7 @@ $(document).ready(function(){
 if ($().dropzone && !$(".dropzone").hasClass("disabled")) {
   var token = localStorage.getItem("_obtoken");
   $(".dropzone").dropzone({
-    url: "http://3.23.109.204:4001/user/uploadFile",
+    url: "https://api.acquire.jobs/user/uploadFile",
     headers : { 
 	    'content-language' : 'en',
 	    'authorization' : 'Bearer '+token
