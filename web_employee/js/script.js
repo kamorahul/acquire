@@ -957,7 +957,7 @@ $(document).ready(function(){
 			url : baseUrl + 'job/jobDetails?jobId='+id,
 			success : function(resp){
 				$('#job-title').append(resp.data.jobName)
-				$('#job-name').text(resp.data.employer.name)
+				$('#job-name').text(resp.data.employer ? resp.data.employer.name:'')
 				$('#job-desc').append(resp.data.description)
 				var ul = ``;
 				if(resp.data.experienceLevel.length > 0){
@@ -969,7 +969,7 @@ $(document).ready(function(){
 				ul+=`<li>$ ${resp.data.startRange} - $ ${resp.data.endRange}</li>`;
 				ul+=`<li><i class="simple-icon-location-pin"></i>${resp.data.address.text}</li>`;
 				$('#details-ul').html(ul);
-				$('#job-image').attr('src',resp.data.employer.profilePic)
+				$('#job-image').attr('src',resp.data.employer ? resp.data.employer.profilePic: '');
 				$('#job-apply-btn').attr('data-id',resp.data._id);
 				window.localStorage.setItem('_lastJob',JSON.stringify(resp));
 			},
